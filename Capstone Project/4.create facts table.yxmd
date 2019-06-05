@@ -1,0 +1,950 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.3">
+  <Nodes>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="8">C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CCLF1_HR.xls
+Table=`CCLF1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="__CCLF8_ACO_ID" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__HIC_MSTR_HICNO_MASKED" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_CLM_FROM_DT" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="DateTime" />
+            <Field name="__CCLF1_CLM_THRU_DT" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="DateTime" />
+            <Field name="__CCLF8_BENE_AGE" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="Double" />
+            <Field name="__CCLF8_BENE_EXPIRED" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF8_BENE_DEATH_DT" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF8_BENE_MDCR_STUS" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF8_BENE_RACE" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF8_BENE_SEX" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_BENE_TYPE" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_FAC_PRVDR_NAME_DBA" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_CLM_BILL_FAC_TYPE" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_CLM_TYPE" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_BENE_PTNT_STUS" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_CLM_ADMSN_SRC" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_CLM_ADMSN_TYPE" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_CLM_OP_SRVC_TYPE" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_DGNS_DRG_CD" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_DRG_DESC" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_LOS" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="Double" />
+            <Field name="__CCLF1_PRNCPL_DGNS_CD" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF1_PRNCPL_DGNS" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF8_BENE_ZIP_CD" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF8_BENE_FIPS_CNTY" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="__CCLF8_BENE_FIPS_STATE" size="255" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="V_WString" />
+            <Field name="COUNT _DISTINCT _CCLF1_CLM_EVENT_ID" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="Double" />
+            <Field name="__CCLF1_CLM_PMT_AMT_ADJ" source="File: C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Group Discussion\CCLF1_HR.xls|||`CCLF1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="186" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="patient_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="patient_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_patient_id" selected="True" />
+                <SelectField field="Left_patient_age" selected="True" />
+                <SelectField field="Left_start_date" selected="True" />
+                <SelectField field="Left_end_date" selected="True" />
+                <SelectField field="Left_princ_code" selected="True" />
+                <SelectField field="Left_patient_id" selected="False" />
+                <SelectField field="Left_ben_exp" selected="True" />
+                <SelectField field="Left_death_date" selected="True" />
+                <SelectField field="Left_mdcr_status" selected="True" />
+                <SelectField field="Left_race" selected="True" />
+                <SelectField field="Left_sex" selected="True" />
+                <SelectField field="Left_pos" selected="True" />
+                <SelectField field="Left_provider_specialty" selected="True" />
+                <SelectField field="Left_provider_type" selected="True" />
+                <SelectField field="Left_princ_desc" selected="True" />
+                <SelectField field="Left_fed_srvc_type" selected="True" />
+                <SelectField field="Left_zip" selected="True" />
+                <SelectField field="Left_county" selected="True" />
+                <SelectField field="Left_state" selected="True" />
+                <SelectField field="Left_payment" selected="True" />
+                <SelectField field="Left_age" selected="True" />
+                <SelectField field="Left_deathdate" selected="True" />
+                <SelectField field="Left_mdcrstatus" selected="True" />
+                <SelectField field="Left_zipcode" selected="True" />
+                <SelectField field="Left_claim_id" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_ACO_ID" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;HIC_MSTR_HICNO_MASKED" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_CLM_FROM_DT" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_CLM_THRU_DT" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_BENE_AGE" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_BENE_EXPIRED" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_BENE_DEATH_DT" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_BENE_MDCR_STUS" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_BENE_RACE" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_BENE_SEX" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_BENE_TYPE" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_FAC_PRVDR_NAME_DBA" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_CLM_BILL_FAC_TYPE" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_CLM_TYPE" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_BENE_PTNT_STUS" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_CLM_ADMSN_SRC" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_CLM_ADMSN_TYPE" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_CLM_OP_SRVC_TYPE" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_DGNS_DRG_CD" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_DRG_DESC" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_LOS" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_PRNCPL_DGNS_CD" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_PRNCPL_DGNS" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_BENE_ZIP_CD" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_BENE_FIPS_CNTY" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF8_BENE_FIPS_STATE" selected="True" />
+                <SelectField field="Left_COUNT &#xA;DISTINCT &#xA;CCLF1_CLM_EVENT_ID" selected="True" />
+                <SelectField field="Left_&#xA;&#xA;CCLF1_CLM_PMT_AMT_ADJ" selected="True" />
+                <SelectField field="Left_provider_name" selected="True" />
+                <SelectField field="Right_patient_key" selected="True" />
+                <SelectField field="Left___CCLF8_ACO_ID" selected="True" />
+                <SelectField field="Left___HIC_MSTR_HICNO_MASKED" selected="True" />
+                <SelectField field="Left___CCLF1_CLM_FROM_DT" selected="True" />
+                <SelectField field="Left___CCLF1_CLM_THRU_DT" selected="True" />
+                <SelectField field="Left___CCLF8_BENE_AGE" selected="True" />
+                <SelectField field="Left___CCLF8_BENE_EXPIRED" selected="True" />
+                <SelectField field="Left___CCLF8_BENE_DEATH_DT" selected="True" />
+                <SelectField field="Left___CCLF8_BENE_MDCR_STUS" selected="True" />
+                <SelectField field="Left___CCLF8_BENE_RACE" selected="True" />
+                <SelectField field="Left___CCLF8_BENE_SEX" selected="True" />
+                <SelectField field="Left___CCLF1_BENE_TYPE" selected="True" />
+                <SelectField field="Left___CCLF1_FAC_PRVDR_NAME_DBA" selected="True" />
+                <SelectField field="Left___CCLF1_CLM_BILL_FAC_TYPE" selected="True" />
+                <SelectField field="Left___CCLF1_CLM_TYPE" selected="True" />
+                <SelectField field="Left___CCLF1_BENE_PTNT_STUS" selected="True" />
+                <SelectField field="Left___CCLF1_CLM_ADMSN_SRC" selected="True" />
+                <SelectField field="Left___CCLF1_CLM_ADMSN_TYPE" selected="True" />
+                <SelectField field="Left___CCLF1_CLM_OP_SRVC_TYPE" selected="True" />
+                <SelectField field="Left___CCLF1_DGNS_DRG_CD" selected="True" />
+                <SelectField field="Left___CCLF1_DRG_DESC" selected="True" />
+                <SelectField field="Left___CCLF1_LOS" selected="True" />
+                <SelectField field="Left___CCLF1_PRNCPL_DGNS_CD" selected="True" />
+                <SelectField field="Left___CCLF1_PRNCPL_DGNS" selected="True" />
+                <SelectField field="Left___CCLF8_BENE_ZIP_CD" selected="True" />
+                <SelectField field="Left___CCLF8_BENE_FIPS_CNTY" selected="True" />
+                <SelectField field="Left___CCLF8_BENE_FIPS_STATE" selected="True" />
+                <SelectField field="Left_COUNT _DISTINCT _CCLF1_CLM_EVENT_ID" selected="True" />
+                <SelectField field="Left___CCLF1_CLM_PMT_AMT_ADJ" selected="True" />
+                <SelectField field="Left_claim_key" selected="True" />
+                <SelectField field="Left_ReformDiagno" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>join by patientid</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="330" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="princ_code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="princ_code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_princ_code" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>join by princ_code</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="462" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="provider_name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="provider_name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_provider_type" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>join by provider_name</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="666" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="newstartdate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="full_date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_start_date" selected="False" />
+                <SelectField field="Right_date_key" selected="True" rename="start_date_key" />
+                <SelectField field="Right_full_date" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>join by start_date</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="date_key" selected="True" />
+            <SelectField field="full_date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="726" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="894" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="newenddate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="full_date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_patient_key" selected="True" />
+                <SelectField field="Left_claim_key" selected="True" />
+                <SelectField field="Left_disease_key" selected="True" />
+                <SelectField field="Left_provider_key" selected="True" />
+                <SelectField field="Left_start_date_key" selected="True" />
+                <SelectField field="Right_date_key" selected="True" rename="end_date_key" />
+                <SelectField field="Left_claim_id" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>join by end date</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="__HIC_MSTR_HICNO_MASKED" selected="True" rename="patient_id" />
+            <SelectField field="__CCLF1_CLM_FROM_DT" selected="True" rename="start_date" />
+            <SelectField field="__CCLF1_CLM_THRU_DT" selected="True" rename="end_date" />
+            <SelectField field="__CCLF1_FAC_PRVDR_NAME_DBA" selected="True" rename="provider_name" />
+            <SelectField field="__CCLF1_CLM_BILL_FAC_TYPE" selected="True" rename="provider_type" />
+            <SelectField field="__CCLF1_PRNCPL_DGNS_CD" selected="True" rename="princ_code" />
+            <SelectField field="&#xA;&#xA;HIC_MSTR_HICNO_MASKED" selected="False" rename="patient_id" />
+            <SelectField field="&#xA;&#xA;CCLF1_CLM_FROM_DT" selected="False" rename="start_date" />
+            <SelectField field="&#xA;&#xA;CCLF1_CLM_THRU_DT" selected="False" rename="end_date" />
+            <SelectField field="&#xA;&#xA;CCLF1_FAC_PRVDR_NAME_DBA" selected="False" rename="provider_name" />
+            <SelectField field="&#xA;&#xA;CCLF1_PRNCPL_DGNS_CD" selected="False" rename="princ_code" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||Select database_project.dim_patient.patient_key, database_project.dim_patient.patient_id From database_project.dim_patient</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>patient key</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Table=Select database_project.dim_patient.patient_key, database_project.dim_patient.patient_id From database_project.dim_patient</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="patient_key" source="File: aka:MySQL|||Select database_project.dim_patient.patient_key, database_project.dim_patient.patient_id From database_project.dim_patient" type="Int32" />
+            <Field name="patient_id" size="100" source="File: aka:MySQL|||Select database_project.dim_patient.patient_key, database_project.dim_patient.patient_id From database_project.dim_patient" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||Select database_project.dim_disease.princ_code, database_project.dim_disease.disease_key From database_project.dim_disease</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>disease key</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Table=Select database_project.dim_disease.princ_code, database_project.dim_disease.disease_key From database_project.dim_disease</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="princ_code" size="48" source="File: aka:MySQL|||Select database_project.dim_disease.princ_code, database_project.dim_disease.disease_key From database_project.dim_disease" type="V_String" />
+            <Field name="disease_key" source="File: aka:MySQL|||Select database_project.dim_disease.princ_code, database_project.dim_disease.disease_key From database_project.dim_disease" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="318" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||Select database_project.dim_provider.provider_name, database_project.dim_provider.provider_key From database_project.dim_provider</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>provider key</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Table=Select database_project.dim_provider.provider_name, database_project.dim_provider.provider_key From database_project.dim_provider</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="provider_name" size="48" source="File: aka:MySQL|||Select database_project.dim_provider.provider_name, database_project.dim_provider.provider_key From database_project.dim_provider" type="V_String" />
+            <Field name="provider_key" source="File: aka:MySQL|||Select database_project.dim_provider.provider_name, database_project.dim_provider.provider_key From database_project.dim_provider" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="402" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||Select database_project.dim_calendar.date_key, database_project.dim_calendar.full_date From database_project.dim_calendar</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>admission key</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Table=Select database_project.dim_calendar.date_key, database_project.dim_calendar.full_date From database_project.dim_calendar</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="date_key" source="File: aka:MySQL|||Select database_project.dim_calendar.date_key, database_project.dim_calendar.full_date From database_project.dim_calendar" type="Int32" />
+            <Field name="full_date" source="File: aka:MySQL|||Select database_project.dim_calendar.date_key, database_project.dim_calendar.full_date From database_project.dim_calendar" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="594" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||Select database_project.dim_calendar.date_key, database_project.dim_calendar.full_date From database_project.dim_calendar</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>leave date key</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Table=Select database_project.dim_calendar.date_key, database_project.dim_calendar.full_date From database_project.dim_calendar</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="date_key" source="File: aka:MySQL|||Select database_project.dim_calendar.date_key, database_project.dim_calendar.full_date From database_project.dim_calendar" type="Int32" />
+            <Field name="full_date" source="File: aka:MySQL|||Select database_project.dim_calendar.date_key, database_project.dim_calendar.full_date From database_project.dim_calendar" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[start_date]" field="newstartdate" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[newstartdate = [start_date]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="810" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[end_date]" field="newenddate" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[newenddate = [end_date]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1230" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||fact_table</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `database_project`.`fact_table` 
+CHANGE COLUMN `patient_key` `patient_key` INT(11) NOT NULL ,
+CHANGE COLUMN `claim_key` `claim_key` INT(11) NOT NULL ,
+CHANGE COLUMN `disease_key` `disease_key` INT(11) NOT NULL ,
+CHANGE COLUMN `provider_key` `provider_key` INT(11) NOT NULL ,
+CHANGE COLUMN `start_date_key` `start_date_key` INT(11) NOT NULL ,
+CHANGE COLUMN `end_date_key` `end_date_key` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`patient_key`, `claim_key`, `disease_key`, `provider_key`, `start_date_key`, `end_date_key`),
+ADD INDEX `cl_idx` (`start_date_key` ASC),
+ADD INDEX `cl2_idx` (`end_date_key` ASC),
+ADD INDEX `claim_idx` (`claim_key` ASC),
+ADD INDEX `disease_idx` (`disease_key` ASC),
+ADD INDEX `provider_idx` (`provider_key` ASC);
+ALTER TABLE `database_project`.`fact_table` 
+ADD CONSTRAINT `cl`
+  FOREIGN KEY (`start_date_key`)
+  REFERENCES `database_project`.`dim_calendar` (`date_key`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `cl2`
+  FOREIGN KEY (`end_date_key`)
+  REFERENCES `database_project`.`dim_calendar` (`date_key`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `claim`
+  FOREIGN KEY (`claim_key`)
+  REFERENCES `database_project`.`dim_claim` (`claim_key`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `disease`
+  FOREIGN KEY (`disease_key`)
+  REFERENCES `database_project`.`dim_disease` (`disease_key`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `provider`
+  FOREIGN KEY (`provider_key`)
+  REFERENCES `database_project`.`dim_provider` (`provider_key`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use database_project;
+drop table if exists fact_table;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:MySQL
+Table=fact_table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1122" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>claim_id</UpdateField_Name>
+          <CreateField_Name>dummy</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>1</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="678" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>claim_key</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>add claim_key</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="270" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[provider_type] = "Hospital"</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>provider_type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-07 21:58:23</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Hospital</Operand>
+              <StartDate>2018-12-07 21:58:23</StartDate>
+              <EndDate>2018-12-07 21:58:23</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[provider_type] = "Hospital"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Switch(Left([princ_code],3),Null(),&#xA;'I21','MIA',&#xA;'I25','CABG',&#xA;'I63','Stroke',&#xA;'J44','COPD',&#xA;'I50','HF')" field="ReformDiagno" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[ReformDiagnoise
+]]></AnnotationText>
+          <DefaultAnnotationText>ReformDiagno = Switch(Left([princ_code],3),Null(),
+'I21','MIA',
+'I25','CABG',
+'I...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ReformDiagno] = "MIA" OR [ReformDiagno]="CABG" OR [ReformDiagno]="Stroke" OR [ReformDiagno]="COPD" OR [ReformDiagno]="HF"</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>princ_code</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-07 22:08:00</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-07 22:08:00</StartDate>
+              <EndDate>2018-12-07 22:08:00</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ReformDiagno] = "MIA" OR [ReformDiagno]="CABG" OR [ReformDiagno]="Stroke" OR [R...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Join" />
+      <Destination ToolID="67" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="67" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Join" />
+      <Destination ToolID="69" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="69" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Join" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Join" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="70" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="70" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="74" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="74" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Join" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="65" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="65" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="True" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="True" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>!create facts table</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
