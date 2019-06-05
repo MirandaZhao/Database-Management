@@ -1,0 +1,668 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Alyteryx\HW5\Sales File.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sales File.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OrderID" source="(Multiple Sources)" type="Int32" />
+            <Field description="Formula: IIF(IsNull([OrderDate]),[Row-1:OrderDate] , [OrderDate])" name="OrderDate" source="Formula: IIF(IsNull([OrderDate]),[Row-1:OrderDate] , [OrderDate])" type="Date" />
+            <Field name="Quantity" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="Quote" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int16" />
+            <Field name="DiscountPct" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Double" />
+            <Field name="Rate" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="SaleAmount" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Double" />
+            <Field name="CustomerName" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="CompanyName" size="43" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Sector" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Industry" size="62" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="City" size="19" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ZipCode" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int32" />
+            <Field name="State" size="14" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Region" size="7" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="ProjectCompleteDate" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Date" />
+            <Field name="DaystoComplete" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="ProductCategory" size="11" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="ProductSubCategory" size="15" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Consultant" size="16" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="Manager" size="14" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="HourlyWage" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="WageMargin" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="OrderID" selected="True" />
+            <SelectField field="OrderDate" selected="True" />
+            <SelectField field="Quantity" selected="True" />
+            <SelectField field="Quote" selected="True" />
+            <SelectField field="DiscountPct" selected="True" />
+            <SelectField field="Rate" selected="True" />
+            <SelectField field="SaleAmount" selected="True" />
+            <SelectField field="CustomerName" selected="True" />
+            <SelectField field="CompanyName" selected="True" />
+            <SelectField field="City" selected="True" />
+            <SelectField field="ZipCode" selected="True" />
+            <SelectField field="ProjectCompleteDate" selected="True" />
+            <SelectField field="DaystoComplete" selected="True" />
+            <SelectField field="ProductCategory" selected="True" />
+            <SelectField field="ProductSubCategory" selected="True" />
+            <SelectField field="Consultant" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="294" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="OrderDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="full_date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_City" selected="True" />
+                <SelectField field="Left_CompanyName" selected="True" />
+                <SelectField field="Left_Consultant" selected="True" />
+                <SelectField field="Left_CustomerName" selected="True" />
+                <SelectField field="Right_date_key" selected="True" rename="orderdatekey" description="orderdaykey" />
+                <SelectField field="Left_DaystoComplete" selected="True" />
+                <SelectField field="Left_DiscountPct" selected="True" />
+                <SelectField field="Right_full_date" selected="False" />
+                <SelectField field="Left_OrderDate" selected="False" />
+                <SelectField field="Left_OrderID" selected="True" />
+                <SelectField field="Left_ProductCategory" selected="True" />
+                <SelectField field="Left_ProductSubCategory" selected="True" />
+                <SelectField field="Left_ProjectCompleteDate" selected="True" />
+                <SelectField field="Left_Quantity" selected="True" />
+                <SelectField field="Left_Quote" selected="True" />
+                <SelectField field="Left_Rate" selected="True" />
+                <SelectField field="Left_SaleAmount" selected="True" />
+                <SelectField field="Left_ZipCode" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="174" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||Select techsales.dim_calendar.date_key, techsales.dim_calendar.full_date From techsales.dim_calendar</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>datekey</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Table=Select techsales.dim_calendar.date_key, techsales.dim_calendar.full_date From techsales.dim_calendar</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="date_key" source="File: aka:MySQL|||Select techsales.dim_calendar.date_key, techsales.dim_calendar.full_date From techsales.dim_calendar" type="Int32" />
+            <Field name="full_date" source="File: aka:MySQL|||Select techsales.dim_calendar.date_key, techsales.dim_calendar.full_date From techsales.dim_calendar" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="462" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||Select techsales.dim_consultant.Consultant, techsales.dim_consultant.ConsultantKey From techsales.dim_consultant</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>consultant</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Table=Select techsales.dim_consultant.Consultant, techsales.dim_consultant.ConsultantKey From techsales.dim_consultant</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Consultant" size="16" source="File: aka:MySQL|||Select techsales.dim_consultant.Consultant, techsales.dim_consultant.ConsultantKey From techsales.dim_consultant" type="String" />
+            <Field name="ConsultantKey" source="File: aka:MySQL|||Select techsales.dim_consultant.Consultant, techsales.dim_consultant.ConsultantKey From techsales.dim_consultant" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="522" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||Select techsales.dim_product.ProductKey, techsales.dim_product.ProductCategory, techsales.dim_product.ProductSubCategory From techsales.dim_product</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>None</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>product</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Table=Select techsales.dim_product.ProductKey, techsales.dim_product.ProductCategory, techsales.dim_product.ProductSubCategory From techsales.dim_product</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductKey" source="File: aka:MySQL|||Select techsales.dim_product.ProductKey, techsales.dim_product.ProductCategory, techsales.dim_product.ProductSubCategory From techsales.dim_product" type="Int32" />
+            <Field name="ProductCategory" size="11" source="File: aka:MySQL|||Select techsales.dim_product.ProductKey, techsales.dim_product.ProductCategory, techsales.dim_product.ProductSubCategory From techsales.dim_product" type="String" />
+            <Field name="ProductSubCategory" size="15" source="File: aka:MySQL|||Select techsales.dim_product.ProductKey, techsales.dim_product.ProductCategory, techsales.dim_product.ProductSubCategory From techsales.dim_product" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="366" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProjectCompleteDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="full_date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_City" selected="True" />
+                <SelectField field="Left_CompanyName" selected="True" />
+                <SelectField field="Left_Consultant" selected="True" />
+                <SelectField field="Left_CustomerName" selected="True" />
+                <SelectField field="Right_date_key" selected="True" rename="projectcompletedate" />
+                <SelectField field="Left_DaystoComplete" selected="True" />
+                <SelectField field="Left_DiscountPct" selected="True" />
+                <SelectField field="Right_full_date" selected="False" />
+                <SelectField field="Left_OrderID" selected="True" />
+                <SelectField field="Left_ProductCategory" selected="True" />
+                <SelectField field="Left_ProductSubCategory" selected="True" />
+                <SelectField field="Left_ProjectCompleteDate" selected="False" />
+                <SelectField field="Left_Quantity" selected="True" />
+                <SelectField field="Left_Quote" selected="True" />
+                <SelectField field="Left_Rate" selected="True" />
+                <SelectField field="Left_SaleAmount" selected="True" />
+                <SelectField field="Left_ZipCode" selected="True" />
+                <SelectField field="Left_orderdatekey" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="294" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||Select techsales.dim_customer.CustomerName, techsales.dim_customer.CustomerKey, techsales.dim_customer.ZipCode, techsales.dim_customer.CompanyName From techsales.dim_customer</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>customer</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Table=Select techsales.dim_customer.CustomerName, techsales.dim_customer.CustomerKey, techsales.dim_customer.ZipCode, techsales.dim_customer.CompanyName From techsales.dim_customer</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerName" size="21" source="File: aka:MySQL|||Select techsales.dim_customer.CustomerName, techsales.dim_customer.CustomerKey, techsales.dim_customer.ZipCode, techsales.dim_customer.CompanyName From techsales.dim_customer" type="V_String" />
+            <Field name="CustomerKey" source="File: aka:MySQL|||Select techsales.dim_customer.CustomerName, techsales.dim_customer.CustomerKey, techsales.dim_customer.ZipCode, techsales.dim_customer.CompanyName From techsales.dim_customer" type="Int32" />
+            <Field name="ZipCode" source="File: aka:MySQL|||Select techsales.dim_customer.CustomerName, techsales.dim_customer.CustomerKey, techsales.dim_customer.ZipCode, techsales.dim_customer.CompanyName From techsales.dim_customer" type="Int32" />
+            <Field name="CompanyName" size="43" source="File: aka:MySQL|||Select techsales.dim_customer.CustomerName, techsales.dim_customer.CustomerKey, techsales.dim_customer.ZipCode, techsales.dim_customer.CompanyName From techsales.dim_customer" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="462" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CompanyName" />
+            <Field field="CustomerName" />
+            <Field field="ZipCode" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CompanyName" />
+            <Field field="CustomerName" />
+            <Field field="ZipCode" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_City" selected="True" />
+                <SelectField field="Right_CompanyName" selected="False" />
+                <SelectField field="Left_CompanyName" selected="False" />
+                <SelectField field="Left_Consultant" selected="True" />
+                <SelectField field="Right_CustomerKey" selected="True" />
+                <SelectField field="Left_CustomerName" selected="False" />
+                <SelectField field="Right_CustomerName" selected="False" />
+                <SelectField field="Left_DaystoComplete" selected="True" />
+                <SelectField field="Left_DiscountPct" selected="True" />
+                <SelectField field="Left_OrderID" selected="True" />
+                <SelectField field="Left_ProductCategory" selected="True" />
+                <SelectField field="Left_ProductSubCategory" selected="True" />
+                <SelectField field="Left_Quantity" selected="True" />
+                <SelectField field="Left_Quote" selected="True" />
+                <SelectField field="Left_Rate" selected="True" />
+                <SelectField field="Left_SaleAmount" selected="True" />
+                <SelectField field="Left_ZipCode" selected="False" />
+                <SelectField field="Right_ZipCode" selected="False" />
+                <SelectField field="Left_projectcompletedate" selected="True" />
+                <SelectField field="Left_orderdatekey" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="582" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Consultant" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Consultant" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_City" selected="True" />
+                <SelectField field="Right_Consultant" selected="False" />
+                <SelectField field="Left_Consultant" selected="False" />
+                <SelectField field="Right_ConsultantKey" selected="True" />
+                <SelectField field="Left_CustomerKey" selected="True" />
+                <SelectField field="Left_DaystoComplete" selected="True" />
+                <SelectField field="Left_DiscountPct" selected="True" />
+                <SelectField field="Left_OrderID" selected="True" />
+                <SelectField field="Left_ProductCategory" selected="True" />
+                <SelectField field="Left_ProductSubCategory" selected="True" />
+                <SelectField field="Left_Quantity" selected="True" />
+                <SelectField field="Left_Quote" selected="True" />
+                <SelectField field="Left_Rate" selected="True" />
+                <SelectField field="Left_SaleAmount" selected="True" />
+                <SelectField field="Left_projectcompletedate" selected="True" />
+                <SelectField field="Left_orderdatekey" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="690" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductCategory" />
+            <Field field="ProductSubCategory" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductCategory" />
+            <Field field="ProductSubCategory" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_City" selected="True" />
+                <SelectField field="Left_ConsultantKey" selected="True" />
+                <SelectField field="Left_CustomerKey" selected="True" />
+                <SelectField field="Left_DaystoComplete" selected="True" />
+                <SelectField field="Left_DiscountPct" selected="True" />
+                <SelectField field="Left_OrderID" selected="True" />
+                <SelectField field="Left_ProductCategory" selected="False" />
+                <SelectField field="Right_ProductCategory" selected="False" />
+                <SelectField field="Right_ProductKey" selected="True" />
+                <SelectField field="Left_ProductSubCategory" selected="False" />
+                <SelectField field="Right_ProductSubCategory" selected="False" />
+                <SelectField field="Left_Quantity" selected="True" />
+                <SelectField field="Left_Quote" selected="True" />
+                <SelectField field="Left_Rate" selected="True" />
+                <SelectField field="Left_SaleAmount" selected="True" />
+                <SelectField field="Left_projectcompletedate" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="822" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="City" selected="True" />
+            <SelectField field="ConsultantKey" selected="True" />
+            <SelectField field="CustomerKey" selected="True" />
+            <SelectField field="DaystoComplete" selected="True" />
+            <SelectField field="DiscountPct" selected="True" />
+            <SelectField field="OrderID" selected="True" />
+            <SelectField field="ProductKey" selected="True" />
+            <SelectField field="Quantity" selected="True" />
+            <SelectField field="Quote" selected="True" />
+            <SelectField field="Rate" selected="True" />
+            <SelectField field="SaleAmount" selected="True" />
+            <SelectField field="projectcompletedate" selected="True" />
+            <SelectField field="orderdatekey" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="966" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||fact_table</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `techsales`.`fact_table` 
+CHANGE COLUMN `ConsultantKey` `ConsultantKey` INT(11) NOT NULL ,
+CHANGE COLUMN `CustomerKey` `CustomerKey` INT(11) NOT NULL ,
+CHANGE COLUMN `ProductKey` `ProductKey` INT(11) NOT NULL ,
+CHANGE COLUMN `projectcompletedate` `projectcompletedate` INT(11) NOT NULL ,
+CHANGE COLUMN `orderdatekey` `orderdatekey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`orderdatekey`, `projectcompletedate`, `ProductKey`, `CustomerKey`, `ConsultantKey`),
+ADD INDEX `prod_idx` (`ProductKey` ASC),
+ADD INDEX `cus_idx` (`CustomerKey` ASC),
+ADD INDEX `consultant_idx` (`ConsultantKey` ASC),
+ADD INDEX `projectcompletedate_idx` (`projectcompletedate` ASC);
+ALTER TABLE `techsales`.`fact_table` 
+ADD CONSTRAINT `product`
+  FOREIGN KEY (`ProductKey`)
+  REFERENCES `techsales`.`dim_product` (`ProductKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `customer`
+  FOREIGN KEY (`CustomerKey`)
+  REFERENCES `techsales`.`dim_customer` (`CustomerKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `consultant`
+  FOREIGN KEY (`ConsultantKey`)
+  REFERENCES `techsales`.`dim_consultant` (`ConsultantKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `orderdatekey`
+  FOREIGN KEY (`orderdatekey`)
+  REFERENCES `techsales`.`dim_calendar` (`date_key`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `projectcompletedate`
+  FOREIGN KEY (`projectcompletedate`)
+  REFERENCES `techsales`.`dim_calendar` (`date_key`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use techsales;
+DROP TABLE IF EXISTS fact_table;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:MySQL
+Table=fact_table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="16" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="16" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Join" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Fact Table</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

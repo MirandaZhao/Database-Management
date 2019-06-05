@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Alyteryx\HW5\Sales File.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sales File.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OrderID" source="(Multiple Sources)" type="Int32" />
+            <Field description="Formula: IIF(IsNull([OrderDate]),[Row-1:OrderDate] , [OrderDate])" name="OrderDate" source="Formula: IIF(IsNull([OrderDate]),[Row-1:OrderDate] , [OrderDate])" type="Date" />
+            <Field name="Quantity" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="Quote" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int16" />
+            <Field name="DiscountPct" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Double" />
+            <Field name="Rate" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="SaleAmount" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Double" />
+            <Field name="CustomerName" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="CompanyName" size="43" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Sector" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Industry" size="62" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="City" size="19" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ZipCode" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int32" />
+            <Field name="State" size="14" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Region" size="7" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="ProjectCompleteDate" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Date" />
+            <Field name="DaystoComplete" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="ProductCategory" size="11" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="ProductSubCategory" size="15" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Consultant" size="16" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="Manager" size="14" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="HourlyWage" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="WageMargin" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="OrderID" selected="False" />
+            <SelectField field="OrderDate" selected="False" />
+            <SelectField field="Quantity" selected="False" />
+            <SelectField field="Quote" selected="False" />
+            <SelectField field="DiscountPct" selected="False" />
+            <SelectField field="Rate" selected="False" />
+            <SelectField field="SaleAmount" selected="False" />
+            <SelectField field="CustomerName" selected="False" />
+            <SelectField field="CompanyName" selected="False" />
+            <SelectField field="Sector" selected="False" />
+            <SelectField field="Industry" selected="False" />
+            <SelectField field="City" selected="False" />
+            <SelectField field="ZipCode" selected="False" />
+            <SelectField field="State" selected="False" />
+            <SelectField field="Region" selected="False" />
+            <SelectField field="ProjectCompleteDate" selected="False" />
+            <SelectField field="DaystoComplete" selected="False" />
+            <SelectField field="ProductCategory" selected="True" />
+            <SelectField field="ProductSubCategory" selected="True" />
+            <SelectField field="Consultant" selected="False" />
+            <SelectField field="Manager" selected="False" />
+            <SelectField field="HourlyWage" selected="False" />
+            <SelectField field="WageMargin" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Product Information</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="426" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ProductCategory" />
+            <Field field="ProductSubCategory" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: ProductCategory, ProductSubCategory</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="630" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ProductKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Consultant" selected="True" />
+            <SelectField field="HourlyWage" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>consultant dimension</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="414" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Consultant" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Consultant - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="570" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Consultant" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: Consultant</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+        <Position x="726" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields orderChanged="False" />
+          <Method>SmartTile</Method>
+          <SmartTile>
+            <Field>HourlyWage</Field>
+            <NameField>Verbose</NameField>
+          </SmartTile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Smart Tile:
+HourlyWage</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="HourlyWage" selected="False" />
+            <SelectField field="Consultant" selected="True" />
+            <SelectField field="Tile_Num" selected="False" />
+            <SelectField field="Tile_SequenceNum" selected="False" />
+            <SelectField field="SmartTile_Name" selected="True" rename="Hourly Wage" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="978" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ConsultantKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CustomerName" selected="True" />
+            <SelectField field="CompanyName" selected="True" />
+            <SelectField field="Sector" selected="True" />
+            <SelectField field="Industry" selected="True" />
+            <SelectField field="City" selected="True" />
+            <SelectField field="ZipCode" selected="True" />
+            <SelectField field="State" selected="True" />
+            <SelectField field="Region" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>customer dimension</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="426" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="CustomerName" />
+            <Field field="CompanyName" />
+            <Field field="ZipCode" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: CustomerName, CompanyName, ZipCode</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="606" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>CustomerKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="798" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||dim_product</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `techsales`.`dim_product` 
+CHANGE COLUMN `ProductKey` `ProductKey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`ProductKey`);
+;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use techsales;
+DROP TABLE IF EXISTS dim_product;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:MySQL
+Table=dim_product</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="PortfolioPluginsGui.AllocateAppend.AllocateAppend">
+        <Position x="786" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RecordType>ZIP</RecordType>
+          <ObjOrKeyField>ZipCode</ObjOrKeyField>
+          <Allocate dataSet="Latest:US_Census_2010" spatialObj="False">
+            <Variables>
+              <Var name="CongDist_GeoID.CongDist_Name" description="Geographic Identifiers Physically Within (2017) Congressional District (115th) Name" />
+              <Var name="Census_2010_SF1_PT1.H0020004" description="Housing Units US Census (2010) Urban/Rural Inside urban clusters" />
+              <Var name="Census_2010_SF1_PT1.H0020005" description="Housing Units US Census (2010) Urban/Rural Rural" />
+              <Var name="Census_2010_SF1_PT1.H0020002" description="Housing Units US Census (2010) Urban/Rural Urban" />
+              <Var name="Census_2010_SF1_VVF.P0120026_PCT" description="Population US Census (2010) % Total Female" />
+              <Var name="Census_2010_SF1_VVF.P0120002_PCT" description="Population US Census (2010) % Total Male" />
+              <Var name="Census_2010_SF1_PT1.P0130003" description="Population US Census (2010) Median Age Female" />
+              <Var name="Census_2010_SF1_PT1.P0130002" description="Population US Census (2010) Median Age Male" />
+            </Variables>
+          </Allocate>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerKey" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="CustomerName" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="CompanyName" size="43" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Sector" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Industry" size="62" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="City" size="19" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ZipCode" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int32" />
+            <Field name="State" size="14" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Region" size="7" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field description="Geographic Identifiers Physically Within (2017) Congressional District (115th) Name" name="CongDist_Name" size="256" source="Allocate: Latest:US_Census_2010" type="V_WString" />
+            <Field description="Housing Units US Census (2010) Urban/Rural Inside urban clusters" name="H0020004" source="Allocate: Latest:US_Census_2010" type="Int64" />
+            <Field description="Housing Units US Census (2010) Urban/Rural Rural" name="H0020005" source="Allocate: Latest:US_Census_2010" type="Int64" />
+            <Field description="Housing Units US Census (2010) Urban/Rural Urban" name="H0020002" source="Allocate: Latest:US_Census_2010" type="Int64" />
+            <Field description="Population US Census (2010) % Total Female" name="P0120026_PCT" scale="2" size="11" source="Allocate: Latest:US_Census_2010" type="FixedDecimal" />
+            <Field description="Population US Census (2010) % Total Male" name="P0120002_PCT" scale="2" size="11" source="Allocate: Latest:US_Census_2010" type="FixedDecimal" />
+            <Field description="Population US Census (2010) Median Age Female" name="P0130003" scale="2" size="22" source="Allocate: Latest:US_Census_2010" type="FixedDecimal" />
+            <Field description="Population US Census (2010) Median Age Male" name="P0130002" scale="2" size="22" source="Allocate: Latest:US_Census_2010" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="CustomerName" order="Asc" />
+            <Field field="CompanyName" order="Asc" />
+            <Field field="ZipCode" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxAllocateAppend" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1122" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||dim_consultant</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `techsales`.`dim_consultant` 
+CHANGE COLUMN `ConsultantKey` `ConsultantKey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`ConsultantKey`);
+;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL><![CDATA[use techsales;
+DROP TABLE IF EXISTS dim_consultant;
+]]></PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:MySQL
+Table=dim_consultant</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="PortfolioPluginsGui.AllocateMetaInfo.AllocateMetaInfo">
+        <Position x="786" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Allocate dataSet="Latest:US_Census_2010" />
+          <MetaInfoMode>Variables</MetaInfoMode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxAllocateMetaInfo" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="954" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="CustomerKey" />
+            <Field name="CustomerName" />
+            <Field name="CompanyName" />
+            <Field name="Sector" />
+            <Field name="Industry" />
+            <Field name="City" />
+            <Field name="ZipCode" />
+            <Field name="State" />
+            <Field name="Region" />
+            <Field name="CongDist_Name" />
+            <Field name="H0020004" />
+            <Field name="H0020005" />
+            <Field name="H0020002" />
+            <Field name="P0120026_PCT" />
+            <Field name="P0120002_PCT" />
+            <Field name="P0130003" />
+            <Field name="P0130002" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Ignore</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName>Name</OldName>
+            <NewName>Description</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerKey" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="CustomerName" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="CompanyName" size="43" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Sector" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Industry" size="62" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="City" size="19" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ZipCode" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int32" />
+            <Field name="State" size="14" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Region" size="7" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field description="Geographic Identifiers Physically Within (2017) Congressional District (115th) Name" name="Name" size="256" source="Allocate: Latest:US_Census_2010" type="V_WString" />
+            <Field description="Housing Units US Census (2010) Urban/Rural Inside urban clusters" name="Inside urban clusters" source="Allocate: Latest:US_Census_2010" type="Int64" />
+            <Field description="Housing Units US Census (2010) Urban/Rural Rural" name="Rural" source="Allocate: Latest:US_Census_2010" type="Int64" />
+            <Field description="Housing Units US Census (2010) Urban/Rural Urban" name="Urban" source="Allocate: Latest:US_Census_2010" type="Int64" />
+            <Field description="Population US Census (2010) % Total Female" name="% Total Female" scale="2" size="11" source="Allocate: Latest:US_Census_2010" type="FixedDecimal" />
+            <Field description="Population US Census (2010) % Total Male" name="% Total Male" scale="2" size="11" source="Allocate: Latest:US_Census_2010" type="FixedDecimal" />
+            <Field description="Population US Census (2010) Median Age Female" name="Median Age Female" scale="2" size="22" source="Allocate: Latest:US_Census_2010" type="FixedDecimal" />
+            <Field description="Population US Census (2010) Median Age Male" name="Median Age Male" scale="2" size="22" source="Allocate: Latest:US_Census_2010" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="CustomerName" order="Asc" />
+            <Field field="CompanyName" order="Asc" />
+            <Field field="ZipCode" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1134" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||dim_customer</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `techsales`.`dim_customer` 
+CHANGE COLUMN `CustomerKey` `CustomerKey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`CustomerKey`);
+;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use techsales;
+DROP TABLE IF EXISTS dim_customer;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:MySQL
+Table=dim_customer</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Unique" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Unique" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="29" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dimension workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

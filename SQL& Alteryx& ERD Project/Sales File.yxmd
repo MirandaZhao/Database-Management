@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+        <Position x="54" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Directory>C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw</Directory>
+          <FileSpec>*.*</FileSpec>
+          <IncludeSubDirs value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>read raw files</AnnotationText>
+          <DefaultAnnotationText>dir C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\*.*</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="198" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>False</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ReadList</Mode>
+          <ReadList_Field>FullPath</ReadList_Field>
+          <ReadList_Type>Path</ReadList_Type>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>read No.1 file in folder</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="330" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>FirstRow</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="Field_1" />
+            <Field name="Field_2" />
+            <Field name="Field_3" />
+            <Field name="Field_4" />
+            <Field name="Field_5" />
+            <Field name="Field_6" />
+            <Field name="Field_7" />
+            <Field name="Field_8" />
+            <Field name="Field_9" />
+            <Field name="Field_10" />
+            <Field name="Field_11" />
+            <Field name="Field_12" />
+            <Field name="Field_13" />
+            <Field name="Field_14" />
+            <Field name="Field_15" />
+            <Field name="Field_16" />
+            <Field name="Field_17" />
+            <Field name="Field_18" />
+            <Field name="Field_19" />
+            <Field name="Field_20" />
+            <Field name="Field_21" />
+            <Field name="Field_22" />
+            <Field name="Field_23" />
+            <Field name="Field_24" />
+            <Field name="Field_25" />
+            <Field name="Field_26" />
+            <Field name="Field_27" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <FirstRow>
+            <OnError>Warn</OnError>
+          </FirstRow>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Take filed name from first row</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="OrderID" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="OrderDate" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="OrderMonthYear" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Quantity" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Quote" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="DiscountPct" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Rate" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="SaleAmount" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="CustomerName" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="CompanyName" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Sector" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Industry" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ZipCode" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ProjectCompleteDate" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="DaystoComplete" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ProductKey" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ProductCategory" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ProductSubCategory" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Consultant" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Manager" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="HourlyWage" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="RowCount" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="WageMargin" size="254" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings>
+        <Position x="678" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">RowID=True,OrderID=True,OrderDate=True,OrderMonthYear=True,Quantity=True,Quote=True,DiscountPct=True,Rate=True,SaleAmount=True,CustomerName=True,CompanyName=True,Sector=True,Industry=False,City=True,ZipCode=True,State=True,Region=True,ProjectCompleteDate=True,DaystoComplete=True,ProductKey=True,ProductCategory=True,ProductSubCategory=True,Consultant=True,Manager=True,HourlyWage=True,RowCount=True,WageMargin=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Explore data with the filed summary</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="942" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\miran\AppData\Local\Temp\Engine_11956_f23a2afa53cd4329b2b8cf93d6f731ec_\Engine_6508_fe9d756a3cba402388f8a5904552b5f3_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Explore data with the data browse-output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="942" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\miran\AppData\Local\Temp\Engine_11956_f23a2afa53cd4329b2b8cf93d6f731ec_\Engine_6508_2f6b37ced07b4d778d5e061a1e47b74a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Explore data with the data browse-report</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="942" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\miran\AppData\Local\Temp\Engine_11956_f23a2afa53cd4329b2b8cf93d6f731ec_\Engine_6508_775580b8b1914583a15f950761bb26a7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Explore data with the data browse-interative</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="690" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>OrderDate</UpdateField_Name>
+          <CreateField_Name>New Field</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Nearest</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF(IsNull([OrderDate]),[Row-1:OrderDate] , [OrderDate])</Expression>
+          <GroupByFields>
+            <Field field="OrderID" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF(IsNull([OrderDate]),[Row-1:OrderDate] , [OrderDate])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="882" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RowID" selected="False" />
+            <SelectField field="OrderMonthYear" selected="False" />
+            <SelectField field="ProductKey" selected="False" />
+            <SelectField field="RowCount" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get rid of variables like rows count that do not have any value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1074" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>IsNull([OrderID])</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNull</Operator>
+            <Field>OrderID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-11-25 14:46:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-11-25 14:46:05</StartDate>
+              <EndDate>2018-11-25 14:46:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Investigate why OrderID is null</AnnotationText>
+          <DefaultAnnotationText>IsNull([OrderID])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1194" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>14000</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create RecordID</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1350" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[RecordID]" field="OrderID" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[OrderID = [RecordID]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1494" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get rid of RecordID</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1674" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Join new OrderID data with original data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1830" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\miran\OneDrive\Desktop\NEW CLASS\Database\Assignment 5\submit\HW5\Sales File.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sales File.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="438" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="RowID" selected="True" />
+            <Field field="OrderID" selected="True" />
+            <Field field="OrderDate" selected="True" />
+            <Field field="OrderMonthYear" selected="True" />
+            <Field field="Quantity" selected="True" />
+            <Field field="Quote" selected="True" />
+            <Field field="DiscountPct" selected="True" />
+            <Field field="Rate" selected="True" />
+            <Field field="SaleAmount" selected="True" />
+            <Field field="CustomerName" selected="True" />
+            <Field field="CompanyName" selected="True" />
+            <Field field="Sector" selected="True" />
+            <Field field="Industry" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="ZipCode" selected="True" />
+            <Field field="State" selected="True" />
+            <Field field="Region" selected="True" />
+            <Field field="ProjectCompleteDate" selected="True" />
+            <Field field="DaystoComplete" selected="True" />
+            <Field field="ProductKey" selected="True" />
+            <Field field="ProductCategory" selected="True" />
+            <Field field="ProductSubCategory" selected="True" />
+            <Field field="Consultant" selected="True" />
+            <Field field="Manager" selected="True" />
+            <Field field="HourlyWage" selected="True" />
+            <Field field="RowCount" selected="True" />
+            <Field field="WageMargin" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Auto field</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int16" />
+            <Field name="OrderID" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int32" />
+            <Field name="OrderDate" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Date" />
+            <Field name="OrderMonthYear" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Date" />
+            <Field name="Quantity" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="Quote" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int16" />
+            <Field name="DiscountPct" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Double" />
+            <Field name="Rate" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="SaleAmount" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Double" />
+            <Field name="CustomerName" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="CompanyName" size="43" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Sector" size="21" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Industry" size="62" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="City" size="19" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ZipCode" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Int32" />
+            <Field name="State" size="14" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Region" size="7" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="ProjectCompleteDate" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Date" />
+            <Field name="DaystoComplete" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="ProductKey" size="28" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="ProductCategory" size="11" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="ProductSubCategory" size="15" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="V_String" />
+            <Field name="Consultant" size="16" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="Manager" size="14" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="String" />
+            <Field name="HourlyWage" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="RowCount" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Byte" />
+            <Field name="WageMargin" source="File: C:\Users\miran\OneDrive\Desktop\Advanced Alteryx Lab\Data for Lab\raw\sales-0.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Reports" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Interactive" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="14" Connection="False" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="8" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Sales File</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
